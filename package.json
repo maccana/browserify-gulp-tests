@@ -1,0 +1,17 @@
+{
+  "name": "browserify-test",
+  "version": "1.0.0",
+  "description": "Testing Browserify",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify app.js -o bundle.js"
+  },
+  "author": "Mike McCann",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^10.2.3"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4"
+  }
+}
