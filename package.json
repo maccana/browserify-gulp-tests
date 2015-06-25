@@ -4,12 +4,15 @@
   "description": "Testing Browserify",
   "main": "index.js",
   "scripts": {
-    "build": "browserify app.js -o bundle.js"
+    "build": "browserify app.js -o bundle.js",
+    "watch": "watchify app.js -o bundle.js"
   },
-  "author": "Mike McCann",
+  "author": "MikeM",
   "license": "ISC",
   "devDependencies": {
-    "browserify": "^10.2.3"
+    "browserify": "^10.2.3",
+    "jshint": "^2.8.0",
+    "watchify": "^3.2.1"
   },
   "dependencies": {
     "jquery": "^2.1.4"

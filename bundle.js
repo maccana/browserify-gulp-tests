@@ -9211,6 +9211,16 @@ return jQuery;
 }));
 
 },{}],2:[function(require,module,exports){
+(function (global){
 var $ = require('jquery')
-alert("hi from browserify!")
+global.$
+alert("hi from app.js")
+
+var button = $('<button/>').html('click me').on('click', function() {
+	alert("hi from browserify!")
+})
+$('body').append(button)
+
+console.log("hello 3 where is jQuery code .....")
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"jquery":1}]},{},[2]);
